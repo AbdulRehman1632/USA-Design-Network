@@ -29,8 +29,10 @@ body{
 
 p,a,li,button,ul{
   font-family: satoshi !important;
+  color: white !important;
 }
 
 h1,h2,h3,h4,h5,h6{
   font-family: inter !important;
+  color: white;
 }

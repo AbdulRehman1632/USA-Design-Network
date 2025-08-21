@@ -1,0 +1,108 @@
+/* VideoBanner.css */
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height for video */
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Keep the video behind content */
+}
+
+.video-content {
+    position: absolute;
+    top: 52%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    text-align: left; /* Align text to left */
+    color: white;
+    z-index: 1;
+    padding: 0 20px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align everything to the left */
+}
+
+.video-content h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.video-content p {
+    font-size: 1.4em;
+    margin: 40px 0;
+    font-weight: 600;
+}
+
+.video-content button {
+    padding: 12px 30px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.video-content button:hover {
+    background-color: rgb(209, 202, 202);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+    .video-content {
+        position: absolute;
+        top: 47%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        text-align: left; /* Align text to left */
+        color: white;
+        z-index: 1;
+        padding: 0 20px;
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align everything to the left */
+    }
+
+    .video-content h1 {
+        font-size: 3.2rem !important; /* Smaller font size for mobile */
+    }
+
+    .video-content p {
+        font-size: 1.2rem !important; /* Smaller font size for mobile */
+    }
+
+    .video-content button {
+        font-size: 1.2rem !important; 
+        padding: 10px 36px !important;
+        
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .video-content h1 {
+        font-size: 1.5rem; /* Further smaller font size for very small screens */
+    }
+
+    .video-content p {
+        font-size: 0.9rem; /* Even smaller font size */
+    }
+
+    .video-content button {
+        font-size: 0.9rem; /* Adjust button size */
+        padding: 8px 20px;
+    }
+}
