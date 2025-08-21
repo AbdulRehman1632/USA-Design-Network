@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  --primary-color:#2476a5;
+  --bg-color:
+  radial-gradient(circle at top left, #2476a55e 0%, transparent 40%),
+  radial-gradient(circle at bottom right, rgba(36, 103, 180, 0.3) 0%, transparent 40%),
+  black;
+}
+
+@font-face {
+  font-family: inter;
+  src: url(../public/assets/fonts/Inter_28pt-Medium.ttf);
+}
+
+@font-face {
+  font-family: satoshi;
+  src: url(../public/assets/fonts/Satoshi-Medium.otf);
+}
+
+body{
+    background-color: black;
+    
+}
+
+p,a,li,button,ul{
+  font-family: satoshi !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: inter !important;
+}
