@@ -1,19 +1,20 @@
 import React from 'react'
-import { Grid, Card, CardContent, Typography, Box } from "@mui/material";
+import { Grid, Card, CardContent, Typography, Box , Button} from "@mui/material";
 import { servicescards } from './ServicesCardsData';
 import { ReactTyped } from 'react-typed';
+import { useNavigate } from 'react-router';
 
-const ServicesCards = () => {
+const ServicesCards = ({ limit,showButton }) => {
+
+   const displayServices = limit ? servicescards.slice(0, limit) : servicescards;
+
+  const navigate = useNavigate()
   return (
     <>
-    <Box sx={{ display:"flex",justifyContent:"center",alignItems:"center"}}>
-       
-        <Typography variant='h4'>Our Services</Typography>
-        
-    </Box>
+   
     <Box sx={{ py: 8, px: 4,}}>
       <Grid container  sx={{display:"flex",justifyContent:"center",alignItems:"center" }}> 
-        {servicescards.map((service, index) => ( 
+      {displayServices.map((service, index) => ( 
           <Grid item xs={12} sm={6} md={4} key={index} sx={{padding:{
             xs:"0px",
             md:"60px",
@@ -61,6 +62,18 @@ const ServicesCards = () => {
           </Grid>
         ))}
       </Grid>
+        {/* Button (Conditional) */}
+        {showButton && (
+          <Box sx={{ display: "flex", justifyContent: "center", mt: 5 }}>
+            <Button
+              variant="contained"
+              sx={{ borderRadius: 5, px: 4, py: 1.2 }}
+              onClick={() => navigate("/Services")}
+            >
+              More Services
+            </Button>
+          </Box>
+        )}
     </Box>
     </>
   );

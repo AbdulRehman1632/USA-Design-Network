@@ -6,6 +6,7 @@ import Pricing from "../Pages/Pricing/Pricing";
 import Branding from "../Pages/Services/Branding/Branding";
 import EcommerceDesign from "../Pages/Services/EcommerceDesign/EcommerceDesign";
 import LogoDesign from "../Pages/Services/LogoDesign/LogoDesign";
+import MainServices from "../Pages/Services/MainServices/MainServices";
 import WebApplication from "../Pages/Services/WebApplication/WebApplication";
 import WebsiteDesign from "../Pages/Services/WebsiteDesign/WebsiteDesign";
 import WordPress from "../Pages/Services/WordPress/WordPress";
@@ -30,6 +31,10 @@ export const routes = [
      {
         path:"/Contact",
         element:<Contact/>
+    },
+    {
+        path:"/Services",
+        element:<MainServices/>
     },
     {
         path:"/websiteDesignAndDevelopment",

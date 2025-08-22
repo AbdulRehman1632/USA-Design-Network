@@ -7,7 +7,7 @@
 export const servicescards = [
     {
         logo:"https://res.cloudinary.com/dpm8fa6gn/image/upload/v1755783949/graphic-design_zotmkb.png",
-        heading:'LOGO DESIGN',
+        heading:'Logo Design',
         background:"transparent",
         para:'A logo is the face of your brand, and it should reflect your personality, values, and message. We design logos that are original, creative, and memorable, and that stand out from the crowd.',
     },
@@ -40,5 +40,36 @@ export const servicescards = [
         heading:'WordPress Development',
         background:"#222222",
         para:'WordPress is the most popular content management system in the world, and it powers millions of websites. We offer WordPress development services that include theme customization, plugin installation, security enhancement, performance optimization, and more.',
-    }
+    },
+    {
+        logo:'https://res.cloudinary.com/dpm8fa6gn/image/upload/v1755863372/backend_eilb0u.png',
+        heading:'Backend Development Solution',
+        background:"transparent",
+        para:'A backend is the part of a website or application that handles the data processing and logic behind the scenes. We provide backend development solutions that are robust, scalable, and secure, using various languages and databases.',
+    },
+    {
+        logo:'https://res.cloudinary.com/dpm8fa6gn/image/upload/v1755863372/chat_jzelo0.png',
+        heading:'Mobile Application Development',
+        background:"#222222",
+        para:'A mobile application is a software program that runs on a mobile device, such as a smartphone or a tablet. We develop mobile applications that are compatible with iOS and Android platforms, using native or hybrid technologies.',
+    },
+    {
+        logo:'https://res.cloudinary.com/dpm8fa6gn/image/upload/v1755863372/animation_bzmsfr.png',
+        heading:'Video Animation',
+        background:"transparent",
+        para:'A video animation is a powerful way to showcase your products or services, explain your concepts or ideas, or tell your story. We create video animations that are engaging, entertaining, and informative, using 2D or 3D graphics and sound effects.',
+    },
+    {
+        logo:'https://res.cloudinary.com/dpm8fa6gn/image/upload/v1755863372/search-engine_gtgm54.png',
+        heading:'Search Engine Optimization',
+        background:"#222222",
+        para:'Search engine optimization (SEO) is the process of improving the visibility and ranking of your website on search engines like Google or Bing. We offer SEO services that include keyword research, content creation, link building, technical SEO, and more.',
+    },
+    {
+        logo:'https://res.cloudinary.com/dpm8fa6gn/image/upload/v1755863372/social-media_r76sf2.png',
+        heading:'Social Media Marketing',
+        background:"transparent",
+        para:'Social media marketing (SMM) is the process of promoting your brand or business on social media platforms like Facebook or Twitter. We offer SMM services that include account creation, content posting, audience engagement, analytics reporting, and more.',
+    },
+
 ]

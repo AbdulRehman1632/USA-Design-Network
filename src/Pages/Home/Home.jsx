@@ -1,8 +1,10 @@
 import React from 'react'
 import MainBanner from '../../Components/HomeComponents/MainBanner/MainBanner'
 import Experience from '../../Components/HomeComponents/Experience/Experience'
-import ServicesCards from '../../Components/HomeComponents/ServicesCards/ServicesCards'
 import AwardWinning from '../../Components/HomeComponents/AwardWinning/AwardWinning'
+import ServicesCards from '../../Components/ServicesComponents/ServicesCards/ServicesCards'
+import { Box, Typography } from '@mui/material'
+import CreativeDesign from '../../Components/HomeComponents/CreativeDesign/CreativeDesign'
 
 
 
@@ -12,8 +14,12 @@ const Home = () => {
 
     <MainBanner/>
     <Experience/>
-    <ServicesCards/>
+     <Box sx={{ display:"flex",justifyContent:"center",alignItems:"center"}}>
+            <Typography variant='h3'>Our Services</Typography>
+        </Box>
+    <ServicesCards limit={6} showButton={true}/>
     <AwardWinning/>
+    <CreativeDesign/>
       
     </div>
   )

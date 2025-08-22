@@ -90,51 +90,50 @@ const CustomNav = () => {
 
             {/* Solutions Dropdown */}
             <Box sx={{ position: "relative" }}>
-              <Button
-                onClick={toggleSolutions}
-                sx={{
-                  color: "white",
-                  textTransform: "none",
-                  fontWeight: 500,
-                }}
-                endIcon={openSolutions ? <ExpandLess /> : <ExpandMore />}
-              >
-                
-                <NavLink  style={{ color: "white", textDecoration: "none" }}>
-              Services
-            </NavLink>
-              </Button>
+  <Button
+    onClick={() => navigate("/services")}   // 👈 Direct Services page
+    sx={{
+      color: "white",
+      textTransform: "none",
+      fontWeight: 500,
+    }}
+    endIcon={openSolutions ? <ExpandLess /> : <ExpandMore />}
+    onMouseEnter={toggleSolutions}  // 👈 Hover ya click se dropdown
+  >
+    Services
+  </Button>
 
-              <Collapse
-                in={openSolutions}
-                timeout="auto"
-                unmountOnExit
-                sx={{
-                  position: "absolute",
-                  top: "100%",
-                  backgroundColor: "#000",
-                  zIndex: 9999,
-                  borderRadius: 1,
-                  minWidth: 200,
-                }}
-              >
-                {solutionLinks.map((solution) => (
-                  <NavLink
-                    key={solution.label}
-                    to={solution.path}
-                    style={{
-                      display: "block",
-                      color: "white",
-                      textDecoration: "none",
-                      padding: "8px 16px",
-                    }}
-                    onClick={() => setOpenSolutions(false)}
-                  >
-                    {solution.label}
-                  </NavLink>
-                ))}
-              </Collapse>
-            </Box>
+  <Collapse
+    in={openSolutions}
+    timeout="auto"
+    unmountOnExit
+    sx={{
+      position: "absolute",
+      top: "100%",
+      backgroundColor: "#000",
+      zIndex: 9999,
+      borderRadius: 1,
+      minWidth: 200,
+    }}
+  >
+    {solutionLinks.map((solution) => (
+      <NavLink
+        key={solution.label}
+        to={solution.path}
+        style={{
+          display: "block",
+          color: "white",
+          textDecoration: "none",
+          padding: "8px 16px",
+        }}
+        onClick={() => setOpenSolutions(false)}
+      >
+        {solution.label}
+      </NavLink>
+    ))}
+  </Collapse>
+</Box>
+
 
             <NavLink
               to="/Portfolio"
@@ -198,33 +197,44 @@ const CustomNav = () => {
               </NavLink>
             </ListItem>
 
-            <ListItem button onClick={toggleSolutions}>
-              <ListItemText primary="Solutions" />
-              {openSolutions ? (
-                <ExpandLess sx={{ color: "white" }} />
-              ) : (
-                <ExpandMore sx={{ color: "white" }} />
-              )}
-            </ListItem>
-            <Collapse in={openSolutions} timeout="auto" unmountOnExit>
-              <List component="div" disablePadding>
-                {solutionLinks.map((solution) => (
-                  <ListItem
-                    button
-                    key={solution.label}
-                    onClick={toggleDrawer(false)}
-                    sx={{ pl: 4 }}
-                  >
-                    <NavLink
-                      to={solution.path}
-                      style={{ textDecoration: "none", color: "white" }}
-                    >
-                      <ListItemText primary={solution.label} />
-                    </NavLink>
-                  </ListItem>
-                ))}
-              </List>
-            </Collapse>
+           <ListItem button onClick={toggleSolutions}>
+  <NavLink
+    to="/services"
+    style={{ textDecoration: "none", color: "white", width: "100%" }}
+    onClick={(e) => {
+      e.stopPropagation(); // dropdown toggle aur nav clash na kare
+      toggleDrawer(false)(); // drawer band ho
+    }}
+  >
+    <ListItemText primary="Services" />
+  </NavLink>
+  {openSolutions ? (
+    <ExpandLess sx={{ color: "white" }} />
+  ) : (
+    <ExpandMore sx={{ color: "white" }} />
+  )}
+</ListItem>
+
+<Collapse in={openSolutions} timeout="auto" unmountOnExit>
+  <List component="div" disablePadding>
+    {solutionLinks.map((solution) => (
+      <ListItem
+        button
+        key={solution.label}
+        onClick={toggleDrawer(false)}
+        sx={{ pl: 4 }}
+      >
+        <NavLink
+          to={solution.path}
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          <ListItemText primary={solution.label} />
+        </NavLink>
+      </ListItem>
+    ))}
+  </List>
+</Collapse>
+
 
             <ListItem button onClick={toggleDrawer(false)}>
               <NavLink to="/Pricing" style={{ textDecoration: "none", color: "white" }}>
