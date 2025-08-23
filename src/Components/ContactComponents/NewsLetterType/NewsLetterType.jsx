@@ -8,17 +8,23 @@ const NewsLetterType = () => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        p: 10,
-        // backgroundImage: "url('https://picsum.photos/1200/400')", // apni banner image ka link daalna
-        // backgroundSize: "cover",
-        // backgroundPosition: "center",
+        flexDirection: { xs: "column", md: "row" }, // mobile me column, desktop me row
+        textAlign: { xs: "center", md: "left" },
+        gap: { xs: 3, md: 0 }, // mobile me spacing
+        p: { xs: 4, md: 10 },
         color: "#fff",
         borderRadius: 3,
-        backgroundColor:"#222222"
+        backgroundColor: "#222222",
       }}
     >
       {/* Left Side Heading */}
-      <Typography variant="h3" sx={{ fontWeight: "bold" }}>
+      <Typography
+        variant="h3"
+        sx={{
+          fontWeight: "bold",
+          mb: { xs: 2, md: 0 }, // mobile pe neeche margin
+        }}
+      >
         Feel Free to Contact with us.
       </Typography>
 
@@ -27,9 +33,9 @@ const NewsLetterType = () => {
         variant="contained"
         sx={{
           bgcolor: "primary.main",
-          px: 4,
-          py: 1.2,
-          fontSize: "1rem",
+          px: { xs: 3, md: 4 },
+          py: { xs: 1, md: 1.2 },
+          fontSize: { xs: "0.9rem", md: "1rem" },
           fontWeight: "bold",
           borderRadius: "30px",
         }}

@@ -103,7 +103,7 @@ const Experience = () => {
         <Grid item xs={12} md={6} textAlign="center">
           <Box
             component="img"
-            src="../assets/images/program.png"
+            src="https://res.cloudinary.com/dpm8fa6gn/image/upload/v1755951430/blue-green-image-mountain-range-with-text-mountain_542670-2911_p7omix.avif"
             alt="Website Development"
             sx={{
               maxWidth: "100%",

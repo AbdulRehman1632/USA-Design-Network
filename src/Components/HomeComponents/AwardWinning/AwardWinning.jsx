@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Typography, Box } from "@mui/material";
+import AnimatedUnderlineHeading from "../../../Utils/Constant/AnimatedUnderlineHeading/AnimatedUnderlineHeading";
 
 
 const AwardWinning = () => {
@@ -18,7 +19,9 @@ const AwardWinning = () => {
         gutterBottom
         sx={{ color: "white" }}
       >
-        Award Winning Digital Marketing Agency
+        {/* <Box sx={{ mt: 10 }}> */}
+  <AnimatedUnderlineHeading text="Award Winning Digital Marketing Agency" />
+{/* </Box> */}
       </Typography>
 
       {/* Paragraph */}

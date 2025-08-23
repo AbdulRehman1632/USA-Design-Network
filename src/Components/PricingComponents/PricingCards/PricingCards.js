@@ -3,6 +3,7 @@ export const pricingCardsdata = [
         heading:"STARTUP LOGO PACKAGE",
         price:"89",
         cutPrice:"99",
+        bestSeller:true,
         lists:{
             a:"9 Custom Logo Design Concepts",
             b:"3 Dedicated Designers",
@@ -16,6 +17,7 @@ export const pricingCardsdata = [
         heading:"BASIC WEBSITE PACKAGE",
         price:"244",
         cutPrice:"488",
+        bestSeller:true,
         lists:{
             a:"1 Page Website Design",
             b:"HTML Based",
@@ -32,6 +34,7 @@ export const pricingCardsdata = [
         heading:"PROFESSIONAL WEBSITE PACKAGE",
         price:"1099",
         cutPrice:"1299",
+        bestSeller:true,
         lists:{
             a:"3 Unique Page Website Design",
             b:"React Based",
@@ -48,6 +51,7 @@ export const pricingCardsdata = [
         heading:"BASIC BRANDING PACKAGE",
         price:"199",
         // cutPrice:"488",
+        bestSeller:true,
         lists:{
             a:"Brand Style guide",
             b:"3 primary custom logo concepts",
@@ -66,6 +70,7 @@ export const pricingCardsdata = [
         heading:"PROFESSIONAL WORDPRESS PACKAGE",
         price:"594",
         // cutPrice:"488",
+        bestSeller:true,
         lists:{
             a:"Upto 10 Unique Pages Website",
             b:"CMS (Content Management System)/Admin Panel",
@@ -85,6 +90,7 @@ export const pricingCardsdata = [
         heading:"STARTUP VIDEO ANIMATION",
         price:"499",
         cutPrice:"999",
+        bestSeller:true,
         lists:{
             a:"30 Second Video",
             b:"Professional Script",
@@ -104,6 +110,7 @@ export const pricingCardsdata = [
         heading:"BASIC SMM PACKAGE",
         price:"199",
         cutPrice:"300",
+        bestSeller:true,
         lists:{
             a:"2 postings per week (per network) Facebook + Twitter + Instagram + Google+",
             b:"Content Creation",
