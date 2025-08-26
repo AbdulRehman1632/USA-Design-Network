@@ -11,7 +11,7 @@ const NewsLetterType = () => {
         flexDirection: { xs: "column", md: "row" }, // mobile me column, desktop me row
         textAlign: { xs: "center", md: "left" },
         gap: { xs: 3, md: 0 }, // mobile me spacing
-        p: { xs: 4, md: 10 },
+        p: { xs: 4, md: 8 },
         color: "#fff",
         borderRadius: 3,
         backgroundColor: "#222222",
