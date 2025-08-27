@@ -1,8 +1,14 @@
 import React from 'react'
 import ServicesCustomBanner from '../../../Utils/Constant/ServicesCustomBanner/ServicesCustomBanner'
-import { webDevBannerData } from '../../../Components/ServicesListComponents/WebsiteDesignComponents/webDesign'
+import { webDevBannerData, webDevDesignFaqs, webPricingData } from '../../../Components/ServicesListComponents/WebsiteDesignComponents/webDesign'
 import ServicesContentBanner from '../../../Utils/Constant/ServicesContentBannner/ServicesContentBanner'
 import ButtonBgImageBanner from '../../../Utils/Constant/ButtonBgImageBanner/ButtonBgImageBanner'
+import CustomProjectsList from '../../../Utils/Constant/CustomProjectsList/CustomProjectsList'
+import { tabData } from '../../../Components/HomeComponents/CreativeDesign/tabdata'
+import CustomServicesPricing from '../../../Utils/Constant/CustomServicesPricing/CustomServicesPricing'
+import Technologies from '../../../Components/ServicesListComponents/WebsiteDesignComponents/Technologies/Technologies'
+import CustomFaqs from '../../../Utils/Constant/Customfaqs/Customfaqs'
+import NewsLetterType from '../../../Components/ContactComponents/NewsLetterType/NewsLetterType'
 
 const WebsiteDesign = () => {
   return (
@@ -16,6 +22,17 @@ const WebsiteDesign = () => {
   heading="If You Want To Design Or Develop Your Project."
   buttonText="Get a Quote"
 />
+
+<CustomProjectsList content={tabData[2].content} />
+
+<Technologies/>
+
+<CustomServicesPricing pricingData={webPricingData}/>
+
+<CustomFaqs faqs={webDevDesignFaqs}/>
+
+<NewsLetterType/>
+
       
     </>
   )

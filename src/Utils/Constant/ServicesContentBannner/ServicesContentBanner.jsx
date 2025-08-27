@@ -42,7 +42,7 @@ const ServicesContentBanner = ({ heading, description, categories, image }) => {
         <img
           src={image}
           alt={heading}
-          style={{ width: "100%", borderRadius: "12px" }}
+          style={{ width: "80%", borderRadius: "12px" }}
         />
       </Box>
     </Box>

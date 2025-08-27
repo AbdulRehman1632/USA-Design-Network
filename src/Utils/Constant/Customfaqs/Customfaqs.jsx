@@ -7,6 +7,7 @@ import {
   Box,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import AnimatedUnderlineHeading from "../AnimatedUnderlineHeading/AnimatedUnderlineHeading";
 
 const CustomFaqs = ({ faqs }) => {
   return (
@@ -25,7 +26,11 @@ const CustomFaqs = ({ faqs }) => {
         gutterBottom
         sx={{ fontWeight: "bold", mb: 4 }}
       >
-        Frequently Asked Questions
+
+         <Box sx={{ mt: 0 }}>
+          <AnimatedUnderlineHeading text="Frequently Asked Questions" />
+        </Box>
+        
       </Typography>
 
       {/* FAQs */}

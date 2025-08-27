@@ -20,7 +20,7 @@ const CustomServicesPricing = ({ pricingData, limit }) => {
 
   return (
     <Box mt={5} p={3}>
-         <Box sx={{ mt: 10 }}>
+         <Box sx={{ mt: 0 }}>
   <AnimatedUnderlineHeading text="Packages we offer" />
 </Box>
       <Grid container spacing={5} justifyContent="center">

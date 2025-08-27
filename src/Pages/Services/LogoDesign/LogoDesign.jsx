@@ -1,13 +1,14 @@
 import React from 'react'
 import ServicesCustomBanner from '../../../Utils/Constant/ServicesCustomBanner/ServicesCustomBanner'
 import ServicesContentBanner from '../../../Utils/Constant/ServicesContentBannner/ServicesContentBanner'
-import logoBannerData, { logoFaqData, logoPricingData } from '../../../Components/ServicesListComponents/LogoDesignComponents/LogoDesignData.js'
+import logoBannerData, { logoCardsData, logoFaqData, LogoheadingData, logoPricingData } from '../../../Components/ServicesListComponents/LogoDesignComponents/LogoDesignData.js'
 import ButtonBgImageBanner from '../../../Utils/Constant/ButtonBgImageBanner/ButtonBgImageBanner'
 import IndustriesSection from '../../../Components/ServicesListComponents/LogoDesignComponents/IndustriesSection/IndustriesSection'
-import ProvenFormulaSection from '../../../Components/ServicesListComponents/LogoDesignComponents/ProvenFormula/ProvenFormulaSection'
+// import ProvenFormulaSection from '../../../Components/ServicesListComponents/LogoDesignComponents/ProvenFormula/ProvenFormulaSection'
 import CustomServicesPricing from '../../../Utils/Constant/CustomServicesPricing/CustomServicesPricing'
 import CustomFaqs from '../../../Utils/Constant/Customfaqs/Customfaqs.jsx'
 import NewsLetterType from '../../../Components/ContactComponents/NewsLetterType/NewsLetterType.jsx'
+import SmallCardsData from '../../../Utils/Constant/SmallCardsData/SmallCardsData.jsx'
 
 const LogoDesign = () => {
   return (
@@ -23,7 +24,9 @@ const LogoDesign = () => {
 />
 
 <IndustriesSection/>
-<ProvenFormulaSection/>
+
+ <SmallCardsData headingData={LogoheadingData}
+  cardsData={logoCardsData}/>
 <CustomServicesPricing pricingData={logoPricingData}/>
 <CustomFaqs faqs={logoFaqData}/>
  <NewsLetterType/>
