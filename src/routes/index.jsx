@@ -7,7 +7,7 @@ import Branding from "../Pages/Services/Branding/Branding";
 import EcommerceDesign from "../Pages/Services/EcommerceDesign/EcommerceDesign";
 import LogoDesign from "../Pages/Services/LogoDesign/LogoDesign";
 import MainServices from "../Pages/Services/MainServices/MainServices";
-import WebApplication from "../Pages/Services/WebApplication/WebApplication";
+import MobileApplication from "../Pages/Services/MobileApplication/MobileApplication";
 import WebsiteDesign from "../Pages/Services/WebsiteDesign/WebsiteDesign";
 import WordPress from "../Pages/Services/WordPress/WordPress";
 
@@ -57,8 +57,8 @@ export const routes = [
         element:<Branding/> 
     },
     {
-        path:"/webApplication",
-        element:<WebApplication/> 
+        path:"/mobileApplication",
+        element:<MobileApplication/> 
     },
 
 ]

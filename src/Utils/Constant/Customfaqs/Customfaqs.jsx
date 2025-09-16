@@ -42,6 +42,7 @@ const CustomFaqs = ({ faqs }) => {
         }}
       >
         {faqs.map((faq, index) => (
+      
           <Accordion
             key={index}
             sx={{

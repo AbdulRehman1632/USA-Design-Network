@@ -32,7 +32,7 @@ const CustomNav = () => {
     { label: "Website Design & Development", path: "/websiteDesignAndDevelopment" },
     { label: "Branding", path: "/branding" },
     { label: "Ecommerce Website Design", path: "/ecommerceWebsiteDesign" },
-    { label: "Web Application", path: "/webApplication" },
+    { label: "Mobile Application", path: "/mobileApplication" },
     { label: "WordPress Development", path: "/wordpress" },
    
   ];
