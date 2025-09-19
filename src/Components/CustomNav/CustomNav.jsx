@@ -34,6 +34,7 @@ const CustomNav = () => {
     { label: "Ecommerce Website Design", path: "/ecommerceWebsiteDesign" },
     { label: "Mobile Application", path: "/mobileApplication" },
     { label: "WordPress Development", path: "/wordpress" },
+    { label: "AI Video And Animation", path: "/AiVideoAndAnimation" },
    
   ];
 

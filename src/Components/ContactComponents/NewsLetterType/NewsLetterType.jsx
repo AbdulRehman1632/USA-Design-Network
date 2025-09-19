@@ -14,7 +14,7 @@ const NewsLetterType = () => {
         p: { xs: 4, md: 8 },
         color: "#fff",
         borderRadius: 3,
-        backgroundColor: "#222222",
+        backgroundColor:"#222222",
       }}
     >
       {/* Left Side Heading */}
@@ -42,6 +42,7 @@ const NewsLetterType = () => {
       >
         Contact US
       </Button>
+    
     </Box>
   );
 };

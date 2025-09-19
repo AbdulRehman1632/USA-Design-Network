@@ -79,6 +79,15 @@ export const tabData = [
       { type: "image", src: "https://res.cloudinary.com/dpm8fa6gn/image/upload/v1736881243/cld-sample-5.jpg" },
     ],
   },
+  {
+    label: "Wordpress Development",
+    content: [
+      { type: "image", src: "https://res.cloudinary.com/dpm8fa6gn/image/upload/v1736881243/cld-sample-5.jpg" },
+      { type: "image", src: "https://res.cloudinary.com/dpm8fa6gn/image/upload/v1736881243/cld-sample-5.jpg" },
+      { type: "image", src: "https://res.cloudinary.com/dpm8fa6gn/image/upload/v1736881243/cld-sample-5.jpg" },
+      { type: "image", src: "https://res.cloudinary.com/dpm8fa6gn/image/upload/v1736881243/cld-sample-5.jpg" },
+    ],
+  },
     {
     label: "Video Animation",
     content: [

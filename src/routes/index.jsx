@@ -3,6 +3,7 @@ import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home";
 import Portfolio from "../Pages/Portfolio/Portfolio";
 import Pricing from "../Pages/Pricing/Pricing";
+import AiVideo from "../Pages/Services/AiVideo/AiVideo";
 import Branding from "../Pages/Services/Branding/Branding";
 import EcommerceDesign from "../Pages/Services/EcommerceDesign/EcommerceDesign";
 import LogoDesign from "../Pages/Services/LogoDesign/LogoDesign";
@@ -59,6 +60,10 @@ export const routes = [
     {
         path:"/mobileApplication",
         element:<MobileApplication/> 
+    },
+    {
+        path:"/AiVideoAndAnimation",
+        element:<AiVideo/> 
     },
 
 ]
