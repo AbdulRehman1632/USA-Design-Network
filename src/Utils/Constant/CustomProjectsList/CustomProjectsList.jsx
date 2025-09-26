@@ -4,6 +4,7 @@ import {
   Grid,
   Dialog,
   IconButton,
+  Typography,
 } from "@mui/material";
 import { Close, ArrowBack, ArrowForward } from "@mui/icons-material";
 import AnimatedUnderlineHeading from "../AnimatedUnderlineHeading/AnimatedUnderlineHeading";
@@ -131,6 +132,15 @@ const CustomProjectsList = ({ content }) => {
             />
           )}
         </Box>
+
+
+        
+
+        
+
+
+
+
       </Dialog>
     </>
   );

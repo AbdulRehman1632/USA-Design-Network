@@ -135,7 +135,6 @@ const CustomNav = () => {
   </Collapse>
 </Box>
 
-
             <NavLink
               to="/Portfolio"
               style={{ color: "white", textDecoration: "none" }}
@@ -258,6 +257,15 @@ const CustomNav = () => {
               </NavLink>
             </ListItem>
           </List>
+
+          {/* <Typography sx={{
+            display:"flex",
+            justifyc
+          }}>
+
+          </Typography> */}
+
+          
 
           {/* <Box
             sx={{

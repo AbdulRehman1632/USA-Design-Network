@@ -5,8 +5,11 @@ import ButtonBGImageBanner from "../../../Utils/Constant/ButtonBgImageBanner/But
 import CustomProjectList from "../../../Utils/Constant/CustomProjectsList/CustomProjectsList"
 import Technologies from "../../../Components/ServicesListComponents/WebsiteDesignComponents/Technologies/Technologies"
 
-import { wordpressBannerData } from '../../../Components/ServicesListComponents/WordpressComponents/Wordpress'
+import { wordpressBannerData, wordpressFaqs, wordpressPricingData } from '../../../Components/ServicesListComponents/WordpressComponents/Wordpress'
 import { tabData } from '../../../Components/HomeComponents/CreativeDesign/tabdata'
+import CustomServicesPricing from '../../../Utils/Constant/CustomServicesPricing/CustomServicesPricing'
+import NewsLetterType from '../../../Components/ContactComponents/NewsLetterType/NewsLetterType'
+import CustomFaqs from '../../../Utils/Constant/Customfaqs/Customfaqs'
 
 const WordPress = () => {
   return (
@@ -24,8 +27,12 @@ const WordPress = () => {
 
   <Technologies/>
 
-  
-      
+ <CustomServicesPricing pricingData={wordpressPricingData}/>
+
+<CustomFaqs faqs={wordpressFaqs}/>
+
+<NewsLetterType/>
+
     </div>
   )
 }
