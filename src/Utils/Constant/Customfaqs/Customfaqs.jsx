@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AnimatedUnderlineHeading from "../AnimatedUnderlineHeading/AnimatedUnderlineHeading";
+import { StarBorder } from "@mui/icons-material";
 
 const CustomFaqs = ({ faqs }) => {
   return (

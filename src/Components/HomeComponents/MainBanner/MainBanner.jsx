@@ -2,6 +2,8 @@ import React from 'react'
 import { useNavigate } from 'react-router';
 import TextAnimation from '../../../Utils/Constant/TextAnimation/TextAnimation';
 import "./MainBanner.css"
+import { color } from 'framer-motion';
+import { flexDirection } from '@mui/system';
 
 const MainBanner = () => {
      const navigate = useNavigate();
@@ -25,7 +27,7 @@ const MainBanner = () => {
 
       
 
-      <div  className="video-content">
+      <div className="video-content">
       
         {/* <h1>Start Your E-Commerce Journey</h1> */}
         <h1 >Be the next</h1>

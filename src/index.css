@@ -32,9 +32,13 @@ body{
     
 }
 
-p,a,li,button,ul{
+p,a,li,ul{
   font-family: satoshi !important;
   color: white !important;
+}
+
+button{
+  font-family: satoshi !important;
 }
 
 h1,h2,h3,h4,h5{
